@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nueva solicitud de registro de cafetería</title>
+    
+    <style>
+        .steps {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .steps li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>¡Nueva solicitud de cafetería en Encafeinados!</h1>
+        </div>
+
+        <p>Hola <strong>{{adminName}}</strong>,</p>
+
+        <p>Se ha recibido una nueva solicitud de registro de cafetería a través de Encafeinados.club que requiere tu
+            revisión. Por favor, valida si cumple con los criterios para aceptarla o enviar tus comentarios sobre sus
+            atributos como cafetería de especialidad.</p>
+
+        <div class="info-box">
+            <p><strong>Nombre de la cafetería:</strong> {{branchName}}</p>
+            <p><strong>Ubicación:</strong> {{branchAddress}}</p>
+            <p><strong>Representante:</strong> {{storeName}}</p>
+            <p><strong>Correo de contacto:</strong> {{storeEmail}}</p>
+            <p><strong>Teléfono:</strong> {{branchPhone}}</p>
+        </div>
+
+        <p>Por favor, revisá la información y realiza la validación correspondiente para continuar con el proceso de
+            incorporación de la sucursal.</p>
+
+        <a href="{{urlBase}}/admin/branches" class="button">Ir al Panel de Administración</a>
+
+        <p>☕ Gracias por ser parte de la red que construye espacios donde el café de especialidad es protagonista.</p>
+
+        <div class="footer">
+            <p>Equipo de Encafeinados.club</p>
+            <p><strong>encafeinados.club</strong></p>
+        </div>
+    </div>
+</body>
+
+</html>

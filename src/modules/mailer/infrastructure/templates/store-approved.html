@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Tu sucursal ha sido aprobada en Encafeinados!</title>
+    <style>
+        .a {
+            color: #4a3f35;
+        }
+
+        .logo {
+            margin-bottom: 15px;
+        }
+
+        .welcome-message {
+            background-color: #f0e6d6;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .welcome-message p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .steps li {
+            margin-bottom: 10px;
+        }
+
+        .branch-details {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            border-left: 3px solid #6f4e37;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>¡Te damos la bienvenidad a Encafeinados.Club!</h1>
+        </div>
+
+        <div class="welcome-message">
+            <p>Nos complace informarte que la sucursal <strong>{{branchName}}</strong> de <strong>{{storeName}}</strong>
+                cumple con todos los criterios para hacer parte de las cafeterías de especialidad de Encafeinados.</p>
+        </div>
+
+        <div class="branch-details">
+            <h2>🏬 Los detalles de tu sucursal aprobada son:</h2>
+            <p><strong>Nombre:</strong> {{branchName}}</p>
+            <p><strong>Dirección:</strong> {{branchAddress}}</p>
+            <p>¡Ahora aparecerás en el mapa de todos los CoffeeLovers registrados en Encafeinados!</p>
+        </div>
+
+        <div class="info-box">
+            <h2>📋 Próximos pasos:</h2>
+            <ol class="steps">
+                <li>Completa tu perfil como<a href="{{urlBase}}/finish-admin-registration?ref={{storeId}}"
+                        style="text-decoration: none;"> Administrador de cafetería</a> para
+                    gestionar todas tus sucursales.</li>
+
+                <li> <a href="{{urlBase}}/login" style="text-decoration: none;">Inicia sesión en Encafeinados</a> con tu
+                    correo y el pin que establezcas. </li>
+                <li>Puedes agregar más sucursales y crear administradores específicos para cada una.</li>
+            </ol>
+            <!--             
+            <div style="text-align: center;">
+                <a href="{{urlBase}}/finish-admin-registration?ref={{storeId}}" style="text-decoration: none;" class="button">Completar mi perfil ahora</a>
+            </div> -->
+        </div>
+
+        <div class="info-box">
+            <h2>💡 ¿Sabías que...?</h2>
+            <p>Como parte de Encafeinados, podrás:</p>
+            <ul class="steps">
+                <li>Aumentar la visibilidad de tu cafetería</li>
+                <li>Gestionar múltiples sucursales desde un solo panel</li>
+                <li>Conectar con amantes del café de tu zona</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Si tienes alguna pregunta sobre cómo administrar tu tienda o agregar más sucursales, no dudes en
+                contactarnos a <strong>encafeinadoscompany@gmail.com</strong></p>
+            <p>¡Te damos la bienvenida al mundo de Encafeinados!</p>
+            <p>Saludos cordiales,<br><strong>Equipo de Encafeinados</strong></p>
+        </div>
+    </div>
+</body>
+
+</html>

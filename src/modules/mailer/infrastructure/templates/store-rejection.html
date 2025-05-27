@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualización sobre tu solicitud en Encafeinados</title>
+    <style>
+        .message-box {
+            background-color: #fdf3f3;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-left: 3px solid #c16b6b;
+        }
+
+        .message-box p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .reason-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #e0d3c2;
+            margin-bottom: 20px;
+        }
+
+        .next-steps {
+            background-color: #f0e6d6;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        .tips {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        .tips li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Actualización sobre tu solicitud</h1>
+        </div>
+
+        <div class="message-box">
+            <p>Estimado(a) {{storeName}}, lamentamos informarte que la sucursal <strong>{{branchName}}</strong> todavía
+                no cumple con todos las características de una cafetería de especialidad para ser parte de Encafeinados.
+            </p>
+        </div>
+
+        <div class="reason-box">
+            <h2>📋 Motivo de la revisión:</h2>
+            <p>{{rejectionReason}}</p>
+        </div>
+
+        <div class="next-steps">
+            <h2>¿Qué puedes hacer ahora?</h2>
+            <p>Te invitamos a realizar los ajustes necesarios según el motivo indicado y volver a enviar tu solicitud.
+            </p>
+
+            <h3>Recomendaciones para tu próxima solicitud:</h3>
+            <ul class="tips">
+                <li>Verifica que la información de tu sucursal esté completa y sea precisa</li>
+                <li>Asegúrate de que las imágenes sean de buena calidad y representen adecuadamente tu cafetería</li>
+                <li>Confirma que la ubicación proporcionada sea exacta</li>
+            </ul>
+            <!--             
+            <div style="text-align: center;">
+                <a href="http://localhost:5173/resubmit-branch?ref={{storeId}}&branch={{branchId}}" style="text-decoration: none;" class="button">Modificar y reenviar solicitud</a>
+            </div> -->
+        </div>
+
+        <div class="footer">
+            <p>Si tienes alguna pregunta o necesitas asistencia para mejorar tu solicitud, no dudes en contactarnos a
+                <strong>soporte@encafeinados.com</strong></p>
+            <p>Esperamos poder incluir tu cafetería en nuestra plataforma pronto.</p>
+            <p>Saludos cordiales,<br><strong>Equipo de Encafeinados</strong></p>
+        </div>
+    </div>
+</body>
+
+</html>

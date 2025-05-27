@@ -1,0 +1,29 @@
+name: CI Pipeline
+
+on: [push, pull_request]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:14
+        env:
+          POSTGRES_USER: test_user
+          POSTGRES_PASSWORD: test_password
+          POSTGRES_DB: test_db
+        ports:
+          - 5433:5432
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 23
+      - name: Install dependencies
+        run: npm install
+      - name: Run Unit Tests with Coverage
+        run: npm run test:unit:cov
+      - name: Run E2E Tests with Coverage
+        run: npm run test:e2e:cov
